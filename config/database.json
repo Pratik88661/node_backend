@@ -1,0 +1,40 @@
+{
+    "local": {
+      "username": "root",
+      "password": "",
+      "database": "node_demo",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "charset": "utf8mb4",
+      "collate": "utf8mb4_general_ci"
+    },
+    "development": {
+      "username": "root",
+      "password": "",
+      "database": "node_demo",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "charset": "utf8mb4",
+      "collate": "utf8mb4_general_ci"
+    },
+    "development_local": {
+      "username": "root",
+      "password": "admin123",
+      "database": "investii_demo",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "charset": "utf8mb4",
+      "collate": "utf8mb4_general_ci"
+    },
+    "production": {
+      "username": "root",
+      "password": "admin123",
+      "database": "investii_demo",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "charset": "utf8mb4",
+      "collate": "utf8mb4_general_ci"
+    }
+  }
+  
+  

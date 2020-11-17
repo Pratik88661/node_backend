@@ -1,0 +1,56 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index",
+    "start dev": "NODE_ENV=development nodemon index",
+    "start prod": "NODE_ENV=production nodemon index",
+    "db:migrate": "node_modules/.bin/sequelize db:create && node_modules/.bin/sequelize db:migrate",
+    "db:model": "node_modules/.bin/sequelize model:generate --name",
+    "db:drop": "node_modules/.bin/sequelize db:drop",
+    "seed:all": "node_modules/.bin/sequelize db:seed:all",
+    "generate:seed": "node_modules/.bin/sequelize seed:generate --name",
+    "migrate:undo": "node_modules/.bin/sequelize db:migrate:undo",
+    "lint": "eslint . --ext .js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demouser/DEMO-Node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demouser/DEMo-Node/issues"
+  },
+  "homepage": "https://github.com/demouser/DEMO-Node#readme",
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "node-libs-browser": "^2.1.0",
+    "sequelize-cli": "^5.5.1"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "bcrypt": "4.0.1",
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.15.2",
+    "express-validator": "^6.6.1",
+    "google-auth-library": "^6.1.3",
+    "jm-ez-l10n": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-simple": "^0.5.1",
+    "mysql2": "^2.1.0",
+    "rotating-file-stream": "^1.4.0",
+    "sequelize": "^5.21.8",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.3.3"
+  }
+}
